@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+*$py.class
+Scripts/
+Lib/
+Include/
+share/
+pyvenv.cfg
+ptt.py.bak-pre-voicely
