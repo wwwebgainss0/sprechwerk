@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft-07/schema#",
+  "description": "Configuration for goldie-pipeline-v2 SEO content generation",
+  "vertical": "sprechwerk",
+  "pipeline": "goldie-pipeline-v2",
+  "contentTypes": [
+    "blog",
+    "service-pages",
+    "faq",
+    "case-studies"
+  ],
+  "minWordCount": 800,
+  "targetKeywords": 10,
+  "qualityThreshold": 0.75,
+  "seoTargets": {
+    "primaryKeywords": [
+      "Sprachtherapie",
+      "Logopädie",
+      "Sprechtraining",
+      "Stimmtherapie",
+      "Artikulation",
+      "Dysarthrie",
+      "Aphasie"
+    ],
+    "secondaryKeywords": [
+      "Sprechtherapie Berlin",
+      "Logopäde in meiner Nähe",
+      "Stimmbildung Kurs",
+      "Sprachstörungen Kinder",
+      "Schlucktherapie"
+    ]
+  },
+  "contentGuidelines": {
+    "tone": "professional yet approachable",
+    "targetAudience": "patients, parents, healthcare professionals",
+    "includeCallToAction": true,
+    "includeInternalLinks": true,
+    "minInternalLinks": 2,
+    "maxInternalLinks": 5
+  },
+  "scheduling": {
+    "defaultCron": "0 10 * * MON",
+    "comment": "Every Monday at 10:00 AM"
+  },
+  "notifications": {
+    "telegramOnSuccess": true,
+    "telegramOnFailure": true,
+    "emailDigest": false
+  },
+  "healthScoreTargets": {
+    "currentScore": 53,
+    "targetScore": 60,
+    "expectedDelta": 5,
+    "recheckAfterHours": 24
+  }
+}
